@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Thirukkural of the Day - daily oru kural with Tamil text and English meaning." />
+  <title>Thirukkural of the Day</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <h1 class="logo">திருக்குறள் <span>of the Day</span></h1>
+    <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark mode">🌙</button>
+  </header>
+
+  <!-- Main -->
+  <main class="container">
+    <p id="today-date" class="date"></p>
+    <p id="live-time" class="time"></p>
+
+    <section class="card" id="kural-card">
+      <p class="tag">
+        <span id="adhigaram">அதிகாரம்</span>
+        <span class="dot">•</span>
+        <span id="kural-number">குறள் 1</span>
+      </p>
+
+      <h2 id="kural-tamil" class="kural-tamil">
+        <!-- JS la kural inga varum -->
+      </h2>
+
+      <hr class="divider" />
+
+      <p id="kural-english" class="kural-english">
+        <!-- English meaning inga varum -->
+      </p>
+
+      <div class="actions">
+        <button id="new-btn" class="btn primary">🔄 New Kural</button>
+        <button id="copy-btn" class="btn">📋 Copy</button>
+        <button id="share-btn" class="btn">📤 Share</button>
+      </div>
+    </section>
+
+    <div class="nav">
+      <button id="prev-btn" class="btn ghost">← Previous</button>
+      <button id="today-btn" class="btn ghost">Today's Kural</button>
+      <button id="next-btn" class="btn ghost">Next →</button>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Made with ❤️ in Tamil Nadu</p>
+  </footer>
+
+  <!-- Toast message (Copied!) -->
+  <div id="toast" class="toast">Copied!</div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
